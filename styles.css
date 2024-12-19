@@ -5,9 +5,88 @@
     padding: 0;
 }
 
+.header,
+.section-one,
+.footer {
+    background-color: #1f2937;
+}
+
+.logo,
+.hero-main-text,
+.s-four-header,
+.footer-text {
+    color: #f9faf8;
+}
+
+.logo,
+.s-four-header {
+    font-size: 24px;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-secondary-text,
+.s-four-text,
+ul {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.info-header-text {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
+}
+
+.section-three {
+    background-color: #e5e7eb;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.author {
+    font-weight: bold;
+}
+
+button,
+.s-four-container {
+    background-color: #3882f6;
+}
+
+button {
+    color: #f9faf8;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.hero-left button {
+    border-style: none;
+}
+
+.s-four-right button {
+    border: solid 1px #f9faf8;
+}
+
+
+
+
 body {
     display: flex;
     flex-direction: column;
+}
+
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+    padding: 20px 80px;
 }
 
 .header {
@@ -29,8 +108,8 @@ ul {
 }
 
 .placeholder {
-    height: 100px;
-    width: 160px;
+    height: 130px;
+    width: 300px;
     background-color: lightgray;
 }
 
@@ -42,17 +121,25 @@ ul {
 
 .item-container {
     display: flex;
+    gap: 16px;
+    padding: 16px;
+    text-align: center;
 }
 
 .square {
-    height: 50px;
-    width: 50px;
-    border: 1px solid blue;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #3882f6;
     border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.subtext,
+.footer-text {
+    font-size: 14px;
 }
 
 .section-three {
-    background-color: lightgray;
     display: flex;
     justify-content: center;
 }
@@ -60,15 +147,25 @@ ul {
 .quote-container {
     display: flex;
     flex-direction: column;
+    padding: 40px;
 }
 
 .author {
     align-self: flex-end;
+    margin-top: 8px;
 }
 
 .s-four-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 24px 36px;
+    
+    border-radius: 5px;
+}
+
+.s-four-right {
+    display: flex;
+    align-items: center;
 }
 
 .footer {
