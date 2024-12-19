@@ -68,6 +68,7 @@ button {
 
 .hero-left button {
     border-style: none;
+    align-self: flex-start;
 }
 
 .s-four-right button {
@@ -80,19 +81,31 @@ button {
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .section-one,
 .section-two,
-.section-three,
+.section-thre,
 .section-four {
-    padding: 20px 80px;
+    flex: 1;
 }
 
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.header,
+.footer {
+    padding: 12px;
 }
 
 ul {
@@ -103,8 +116,22 @@ ul {
 
 .section-one {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 24px;
+    padding: 30px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .placeholder {
@@ -116,21 +143,23 @@ ul {
 .section-two {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin:12px 0 36px 0;
 }
 
 .item-container {
     display: flex;
-    gap: 16px;
-    padding: 16px;
+    gap: 36px;
     text-align: center;
+    margin-top: 24px;
 }
 
 .square {
-    height: 100px;
-    width: 100px;
-    border: 1px solid #3882f6;
-    border-radius: 5px;
+    height: 120px;
+    width: 120px;
+    border: 3px solid #3882f6;
+    border-radius: 8px;
     margin-bottom: 5px;
 }
 
@@ -147,7 +176,8 @@ ul {
 .quote-container {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+
+    margin: 48px;
 }
 
 .author {
@@ -155,12 +185,21 @@ ul {
     margin-top: 8px;
 }
 
+.section-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .s-four-container {
     display: flex;
-    justify-content: space-evenly;
-    padding: 24px 36px;
-    
+    align-items: center;
+    justify-content: space-around;
+
+    width: 800px;
+    padding: 18px 30px;
     border-radius: 5px;
+    margin: 48px;
 }
 
 .s-four-right {
